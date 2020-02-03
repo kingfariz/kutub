@@ -1,0 +1,183 @@
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #ccccff;
+}
+
+#container{
+	width : 600px;
+	height : 200px;
+	font-size:90%;
+	margin :auto;
+}
+.form{
+	position : center;
+	background:white;
+	width:450px; 
+	padding-left:50px; 
+	padding-top:50px;
+	font-family:Gotham;
+	border-radius : 5px;
+	color: black;
+	padding:30px 10px;
+	margin : 10% 10% 10% 10%;
+}
+
+.form h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:20px;
+  margin-top : 5px;
+  color: balck;
+  font-family: gotham;
+}
+
+.form input[type="text"] { 
+	width: 250px; 
+	margin: 10px; 
+	 border-radius: 5px;
+	 padding:10px;
+	 
+}
+
+.form input[type="textarea"] { 
+	width: 300px; 
+	margin:10px; 
+	padding:10px;
+}
+
+.form input[type="email"] {
+	width: 250px;
+	margin:10px;
+	border-radius: 5px;
+	padding:10px;
+}
+
+.form input[type="password"] { 
+	width: 250px; 
+	margin:10px;
+	border-radius: 5px;
+	padding:10px;
+}
+
+
+
+.form textarea.textarea{
+	width:300px;  
+	height : 60px;
+	margin:5px;
+	padding:10px;
+
+}
+
+
+.form label { 
+	color: #000; 
+	font-weight:bold; 
+	font-size: 14px;
+	font-family:Gotham; 
+	margin-left : 35px;
+	width : 75px;
+}
+
+
+
+
+.form input, textarea {
+	background-color:  #e0ebeb;
+	border: 1px solid rgba(122, 192, 0, 0.15); 
+	padding: 7px; 
+	font-family: Keffeesatz, Arial; 
+	color: black;
+	font-size: 14px; 
+	font-family : helvetica;
+	text-align : right-center;
+	-webkit-border-radius: 5px; 
+	margin-bottom: 15px; 
+	margin-top: 5px;
+	margin-left : 5px;
+}
+
+.form select {
+	border: 1px solid rgba(122, 192, 0, 0.15); 
+	padding: 7px; 
+	font-family: Keffeesatz, Arial; 
+	color: #4b4b4b;
+	font-size: 14px; 
+	-webkit-border-radius: 5px; 
+	margin-bottom: 15px; 
+	margin-top: 10px;
+	margin-left : 5px;
+}
+
+.form input:focus, textarea:focus, select:focus{
+	border: 1px solid #ff5400; 
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.form label.gender {
+	font-size: 15px;
+	font-weight : normal;
+	margin-left : 0px;
+	padding : 0px;
+}
+
+.form input.buttom{ 
+  background:#2196F3;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:15px;
+  width:80px;
+  cursor:pointer;
+  border: none; /* Remove borders */
+  border-radius: 5px;
+  color: white; /* Add a text color */
+  padding: 10px 10px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size: 14px;
+  font-weight : bold;
+  margin-left: 40px;
+  margin-right : -20px;
+  
+	
+}
+	
+.form input.buttom:hover{
+	background: #0b7dda; 
+}
+
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img { 
+	border:0;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+header{
+	display: block;
+}

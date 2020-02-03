@@ -1,0 +1,795 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #e6e6ff;
+}
+
+/* Header/Blog Title */
+#header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+#header h1 {
+  font-size: 50px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #2196F3;
+  max-height: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+ font-weight: bold;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #2196F3;
+  font-family: gotham; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #0b7dda;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+   font-weight: normal;
+   font-size: 13px;
+   font-family :Gotham;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+#leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+#rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+#fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+#card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+#row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+#footer {
+  padding: 20px;
+  text-align: center;
+  background: #2196F3;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  #leftcolumn, #rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  #topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.btn {
+  border: none; /* Remove borders */
+  border-radius: 5px;
+  color: white; /* Add a text color */
+  padding: 10px 20px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size : 13px;
+  font-family :gotham;
+  margin-bottom : 15px;
+  
+}
+
+.btn1 {
+  border: none; /* Remove borders */
+  border-radius: 5px;
+  color: white; /* Add a text color */
+  padding: 10px 20px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size: 13px;
+  margin-left : 83%;
+  margin-top : 3px;
+  margin-bottom : 0px;
+  font-size : 13px;
+  font-family :gotham;
+}
+
+.btn2 {
+  border: none; /* Remove borders */
+  border-radius: 5px;
+  color: white; /* Add a text color */
+  padding: 10px 20px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size: 13px;
+  margin-left : 30%;
+  margin-right : -30%;
+  margin-top : 10px;
+   font-size : 13px;
+  font-family :gotham;
+  width : 90px;
+}
+
+.btn3 {
+  border: none; /* Remove borders */
+  border-radius: 5px;
+  color: white; /* Add a text color */
+  padding: 12px 10px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size : 13px;
+  font-family :gotham;
+  margin-bottom : 10px;
+  margin-left : -20%;
+  margin-right : -50%;
+  width : 100px;
+}
+
+.info {background-color: #2196F3; } /* Blue */
+.info:hover {background: #0b7dda;}
+
+.table1 {
+    font-family: sans-serif;
+    color: #232323;
+    border-collapse: collapse; 
+}
+
+.table1, th, td{
+    padding: 5px 5px;
+}
+
+.caption, th{
+    text-align: center;
+}
+#containerz{
+	width : 600px;
+	height : 200px;
+	font-size:90%;
+	margin :auto;
+}
+
+
+.form{
+	position : center;
+	background:white;
+	width:450px; 
+	padding-left:50px; 
+	padding-top:50px;
+	font-family:Gotham;
+	border-radius : 5px;
+	border : 1px solid black;
+	color: black;
+	padding:30px 10px;
+	margin : 3% 0% 3% 0%;
+	margin-left : 25%;
+}
+
+.form h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:20px;
+  margin-top : 5px;
+  color: balck;
+  font-family: gotham;
+}
+
+.form input[type="text"] { 
+	width: 250px; 
+	 background:#ecf0f1;
+	 border-radius: 5px;
+	 padding:10px; 
+}
+
+
+.form input[type="username"] { 
+	width: 250px; 
+	 background:#ecf0f1;
+	 border-radius: 5px;
+	 padding:10px; 
+	 visibility : true;
+}
+
+.form input[type="file"] { 
+	width: 250px; 
+	padding:10px;
+	background:#ecf0f1;
+}
+
+.form input[type="textarea"] { 
+	width: 250px; 
+	padding:10px;
+}
+
+.form input[type="email"] {
+	width: 250px;
+	background:#ecf0f1;
+	border-radius: 5px;
+	padding:10px;
+}
+
+.form input[type="password"] { 
+	width: 250px; 
+	background:#ecf0f1;
+	border-radius: 5px;
+	padding:10px;
+}
+
+
+
+.form textarea.textarea{
+	width:200px;  
+	height : 60px;
+	margin:5px;
+	padding:10px;
+
+}
+
+.form textarea{
+	width:250px;  
+	height : 80px;
+	border-radius: 5px;
+	padding:10px;
+	background:#ecf0f1;
+}
+
+.form option{
+	background-color: rgba(255, 255, 255, 1);
+	width : 100px;
+}
+.form select {
+	background-color:   #e0ebeb; 
+	border: 1px solid rgba(122, 192, 0, 0.15); 
+	padding: 7px; 
+	font-family: Keffeesatz, Arial; 
+	color: #4b4b4b;
+	font-size: 14px; 
+	-webkit-border-radius: 5px; 
+	margin-bottom: 15px; 
+	margin-top: 10px;
+	margin-left : 5px;
+}
+
+.form select[type="text"] { 
+	width: 250px; 
+	border-radius: 5px;
+	padding:10px;
+	background-color:   #e0ebeb;
+}
+.form label { 
+	color: #000; 
+	font-weight:bold; 
+	font-size: 14px;
+	font-family:Gotham; 
+	margin-left : 5px;
+	width : 75px;
+	text-align : left;
+}
+
+.form .label2 { 
+	color: #000; 
+	font-weight:bold; 
+	font-size: 14px;
+	font-family:Gotham; 
+	margin-left : 15px;
+	width : 75px;
+	text-align : left;
+}
+
+.form input, textarea {
+	background-color: rgba(255, 255, 255, 0.4); 
+	border: 1px solid rgba(122, 192, 0, 0.15); 
+	padding: 7px; 
+	font-family: Keffeesatz, Arial; 
+	color: #4b4b4b;
+	font-size: 14px; 
+	text-align : right-center;
+	-webkit-border-radius: 5px; 
+	margin : 5px;
+}
+
+.form select {
+	background-color: rgba(255, 255, 255, 0.4); 
+	border: 1px solid rgba(122, 192, 0, 0.15); 
+	padding: 7px; 
+	font-family: Keffeesatz, Arial; 
+	color: #4b4b4b;
+	font-size: 14px; 
+	-webkit-border-radius: 5px; 
+	margin: 5px;
+}
+
+.form input:focus, textarea:focus {
+	border: 1px solid #ff5400; 
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.form .select-style {
+	-webkit-appearance: button;
+	-webkit-border-radius: 2px;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	-webkit-padding-end: 20px;
+	-webkit-padding-start: 2px;
+	-webkit-user-select: none;
+	background-image: url(images/select-arrow.png), 
+	-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+	background-position: center right;
+	background-repeat: no-repeat;
+	border: 0px solid #FFF;
+	color: #555;
+	font-family:Arial, Helvetica;
+	margin: 5px;
+	overflow: hidden;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-overflow: ellipsis;
+	white-space: nowrap;}
+  
+.form label.gender {
+	font-size: 12px;
+	font-weight : normal;
+	margin : 0px;
+}
+
+.form input.buttom{ 
+  background:#2196F3;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:15px;
+  width:100px;
+  cursor:pointer;
+  border: none; /* Remove borders */
+  border-radius: 5px;
+  color: white; /* Add a text color */
+  padding: 10px 20px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size: 16px;
+  font-weight : bold;
+  margin-left: 40px;
+  margin-right : -20px;
+  
+	
+}
+	
+.form input.buttom:hover{
+	background: #0b7dda; 
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:5px;
+}
+
+caption,th {
+	text-align:center;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width:auto;
+}
+
+/* style_login*/
+#container2{
+	width : 500px;
+	font-size:90%;
+	margin : 0 auto;
+}
+.box{
+  position : center;
+  height:350px;
+  width:300px;
+  border : 1px solid black;
+  border-radius : 5px;
+  color:black;
+  background:#ffffff;
+  padding:30px 10px;
+  margin : 5% 40% 5% 20%;
+  
+}
+.box h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:30px;
+  margin-top : 5px;
+  color: balck;
+  font-family:Gotham;
+}
+
+
+.box input{
+	background-color:  #e0ebeb;
+	border: 1px solid rgba(122, 192, 0, 0.15); 
+	padding: 15px; 
+	font-family: Keffeesatz, Arial; 
+	color: black;
+	font-size: 14px; 
+	text-align : right-center;
+	-webkit-border-radius: 5px; 
+	 width:250px;
+	 margin:5px auto;
+}
+
+.box input:focus {
+	border: 1px solid #ff5400; 
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.box button{
+  background:#2196F3;
+  border:0;
+  color:#fff;
+  padding:10px;
+  font-size:14px;
+  font-family:gotham;
+  width:200px;
+  margin:20px auto;
+  display:block;
+  cursor:pointer;
+  border: none; /* Remove borders */
+  border-radius: 5px;
+  color: white; /* Add a text color */
+  padding: 10px 20px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size: 16px;
+  font-weight : bold;
+}
+.box button:hover {
+	background: #0b7dda;
+}
+
+.p2{
+	font-size : 12px;
+}
+
+.button{
+  font-family: gotham;
+
+}
+.button2 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 0px;
+  color: white;
+  background-color: #2196F3;
+  text-align: center;
+  cursor: pointer;
+  width: 75%;
+  margin-top : 20px;
+  border: none; /* Remove borders */
+  border-radius: 5px;
+  color: white; /* Add a text color */
+  padding: 10px 20px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size: 14px;
+  margin-left :15%;
+  font-weight : bold;
+}
+
+
+/*CSS My profile*/
+
+
+.form4{
+	position : center;
+	background:white;
+	width:450px; 
+	padding-left:50px; 
+	padding-top:50px;
+	font-family:Gotham;
+	border : solid 1px black;
+	border-radius : 5px;
+	color: black;
+	padding:30px 10px;
+	margin : 5% 5% 5% 5%;
+	margin-left : 30%;
+	position: center;
+}
+
+.form4 h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:20px;
+  margin-top : 5px;
+  color: balck;
+  font-family: gotham;
+}
+
+
+
+.form4 label { 
+	color: #000; 
+	font-weight:bold; 
+	font-size: 14px;
+	font-family:Gotham; 
+	margin-left : -10px;
+	width : 70px;
+	margin-right : 5px;
+}
+
+
+.form4 input, textarea {
+	background-color: rgba(255, 255, 255, 0.4); 
+	border: 1px solid rgba(122, 192, 0, 0.15); 
+	padding: 7px; 
+	font-family: Keffeesatz, Arial; 
+	color: #4b4b4b;
+	font-size: 14px; 
+	text-align : right-center;
+	-webkit-border-radius: 5px; 
+	margin-bottom: 15px; 
+	margin-top: 10px;
+	margin-left : 5px;
+}
+	
+.form4 input.buttom:hover{
+	background: #0b7dda; 
+}
+
+input,p,th,td { 
+	margin:0;
+	padding:0;
+}
+
+table4 {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+caption, td {
+	text-align:left;	
+}
+
+p{
+	margin: 3px;
+	font-family: gotham;
+	font-size : 15px;
+	
+}
+
+/*---------------------------------------------*/
+
+/*-----------CSS Table user----------*/
+#user {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+
+
+}
+
+#user td, #user th {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+#user tr:nth-child(even){background-color: #f2f2f2;}
+
+/*#user tr:hover {background-color: #ddd;} ;#2196F3*/
+
+#user th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0b7dda;
+  color: white;
+    text-align: center;
+}
+
+#user h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:20px;
+  margin-top : 5px;
+  color: balck;
+  font-family: gotham;
+}
+
+#margin{
+	  margin-left : 20px;
+	  margin-right: 20px;
+}
+
+#margin2{
+	  margin-left : 20px;
+	  margin-right: -10px;
+}
+
+#vid {
+	margin-left : 20px;
+	margin-right: 20px;
+	font-size:16px;
+	color: balck;
+	font-family: Arial;
+  font-weight:bold; 
+}
+
+/*-----------------Style kategori view katgeori--------------------*/
+
+.form5{
+  position : left;
+  background:white;
+  font-family:Gotham;
+  border-radius : 5px;
+  color: black;
+  padding:0px 0px;
+  margin-left : 2%;
+}
+
+
+
+
+
+.form5 option{
+  background-color: rgba(255, 255, 255, 1);
+  width : 100px;
+}
+
+.form5 select[type="text"] { 
+  width: 150px; 
+  border : 2px solid #2196F3;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.form5 label { 
+  color: #000; 
+  font-weight:bold; 
+  font-size: 16px;
+  font-family:Gotham; 
+  margin-left : 5px;
+  width : 80px;
+  text-align : left;
+}
+
+.form5 select {
+  background-color: #fff; 
+  border: 1px solid rgba(122, 192, 0, 0.15); 
+  padding: 0px; 
+  font-family: Keffeesatz, Arial; 
+  color: #4b4b4b;
+  font-size: 14px; 
+  -webkit-border-radius: 5px; 
+}
+.form5 input, textarea {
+	background-color: rgba(255, 255, 255, 0.4); 
+	border: 1px solid rgba(122, 192, 0, 0.15); 
+	padding: 7px; 
+	font-family: Keffeesatz, Arial; 
+	color: #4b4b4b;
+	font-size: 14px; 
+	text-align : right-center;
+	-webkit-border-radius: 5px; 
+	margin : 5px;
+}
+.form5 input:focus, textarea:focus {
+	border: 2px solid #0b7dda; 
+	background-color: rgba(255, 255, 255, 1);
+}
+.btn4 {
+  border: none; /* Remove borders */
+  border-radius: 5px;
+  color: white; /* Add a text color */
+  padding: 13px 10px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size : 13px;
+  font-family :Gotham;
+  margin-bottom : 0px;
+  margin-left : 2px;
+  width : 60px;
+  background-color: #2196F3; 
+}
+
+.btn5 {
+  border: none; /* Remove borders */
+  border-radius: 5px;
+  color: white; /* Add a text color */
+  padding: 13px 10px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  font-size : 13px;
+  font-family :gotham;
+  margin-bottom : 0px;
+  margin-left : 612%;
+  width : 75px;
+  background-color: #2196F3; 
+}
+
+.form5 input[type="text"] { 
+	 width: 350px; 
+	 background:#fff;
+	 border-radius: 5px;
+	 border: 2px solid #2196F3;
+	 padding:10px; 
+	 margin-left: 130%;
+}
+
